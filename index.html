@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ha Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <div class="main_header">
+      <h3>My Converter</h3>
+    </div><br>
+     <!-- Section 1 Start -->
+    <div class="section_1">
+      <h1>Length Converter</h1>
+      <br />
+      <input
+        type="number"
+        name="number"
+        id="userInputBox_Length"
+        class="style_inputBox allInputAndResultBox_style_r"
+        placeholder="Enter here"
+      />
+      <select name="unit_selector" class="in_unit_selector typeStyleForAll" id="in_unit_selector_Length">
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+        <option value="inch">inch</option>
+        <option value="ft">ft</option>
+        <option value="m">m</option>
+        <option value="km">km</option>
+        <option value="yard">yard</option>
+        <option value="dm">dm</option>
+        <option value="micrometer">micromter</option>
+        <option value="picometer">picometer</option>
+        <option value="nanometer">nanometer</option>
+        <option value="mile">mile</option>
+        <option value="nauticalmile">nauticalmile</option></select
+      ><br /><br />
+      <input
+        type="number"
+        name="number"
+        id="outputBox_Length"
+        class="style_outputBox allInputAndResultBox_style_r"
+        placeholder="Result is here"
+        disabled
+      />
+      <select name="unit_selector" class="out_unit_selector typeStyleForAll" id="out_unit_selector_Length">
+        <option value="c_unit_mm">mm</option>
+        <option value="c_unit_cm">cm</option>
+        <option value="c_unit_inch">inch</option>
+        <option value="c_unit_ft">ft</option>
+        <option value="c_unit_m">m</option>
+        <option value="c_unit_km">km</option>
+        <option value="c_unit_yard">yard</option>
+        <option value="c_unit_dm">dm</option>
+        <option value="c_unit_micrometer">micromter</option>
+        <option value="c_unit_picometer">picometer</option>
+        <option value="c_unit_nanometer">nanometer</option>
+        <option value="c_unit_mile">mile</option>
+        <option value="c_unit_nauticalmile">nauticalmile</option></select
+      ><br /><br />
+
+      <button id="resultButton_Length" class="resultButton allInputBoxFullWidth">Get Result</button><br /><br />
+      <button class="style_clearButton allInputBoxFullWidth" id="clearButton_Length">Clear</button>
+    </div>
+   <!-- Section 1 End -->
+
+    <!-- Mass And Weight Calcultion -->
+    <!-- Section 2 Start -->
+    <div class="section_2">
+      <h1 class="headerText">Mass & Weight Converter</h1>
+      <br /><input
+      type="number"
+      name="number"
+      id="userInputBoxMassWeight"
+      class="style_inputBox allInputAndResultBox_style_r"
+      placeholder="Enter here"
+    /> 
+    <select name="unit_selector" class="in_unit_selector typeStyleForAll" id="in_unit_selector_mass_weight">
+      <option value="miligram">miligram</option>
+      <option value="decigram">decigram</option>
+      <option value="centigram">centigram</option>
+      <option value="gram">gram</option>
+      <option value="hectogram">hectogram</option>
+      <option value="kilogram">kilogram</option>
+      <option value="metricton">metricton</option>
+      <option value="ounce">ounce</option>
+      <option value="pound">pound</option>
+      <option value="stone">stone</option>     
+      </select><br><br>
+    <input
+      type="number"
+      name="number"
+      id="outputBoxMassWeight"
+      class="style_outputBox allInputAndResultBox_style_r"
+      placeholder="Result is here"
+      disabled
+    />
+    <select name="c_unit_selector" class="out_unit_selector typeStyleForAll" id="out_unit_selector_mass_weight" >
+      <option value="c_unit_miligram">miligram</option>
+      <option value="c_unit_decigram">decigram</option>
+      <option value="c_unit_centigram">centigram</option>
+      <option value="c_unit_gram">gram</option>
+      <option value="c_unit_hectogram">hectogram</option>
+      <option value="c_unit_kilogram">kiligram</option>
+      <option value="c_unit_metricton">metric ton</option>
+      <option value="c_unit_ounce">ounce</option>
+      <option value="c_unit_pound">pound</option>
+      <option value="c_unit_stone">stone</option>   
+    </select><br><br>
+    <button id="resultButtonMassWeight" class="resultButton allInputBoxFullWidth">Get Result</button><br /><br />
+    <button class="style_clearButton allInputBoxFullWidth" id="clearButtonMassWeight">Clear</button>
+  </div>
+</div>
+  <!-- Section 2 End -->
+
+    <!-- BMI & BMR Calculatin -->
+    <!-- Section 3 Start -->
+    <div class="section_3">
+      <div class="BmiAndBmr">
+        <button class="style_for_bmi BmrBmiButtionRes" id="forBMI" onclick="hideItemBMI()">BMI Calculation</button>
+        <button class="style_for_bmr BmrBmiButtionRes" id="ForBMR" onclick="hideItemBMR()">BMR Calculation</button>
+      </div><br>
+
+      <div id="BmiHideAll">
+        <h1  class="headerText">BMI Calculation</h1><br>
+        <input type="number" id="BMI_InputBoxWeight" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Your Weight">
+        <select class="in_unit_selector typeStyleForAll" id="BMI_weight_select_unit">
+          <option value="BMI_kg">kg</option>
+        </select><br><br>
+        <input type="number" id="BMI_InputBoxFeet" class="style_inputBoxFor_BMI feetInchInputBoxRes" placeholder="Only Feet Here">
+        <select class="in_unit_selectorBMI feetInchTypeRes" id="BMI_feet_select_unit">
+          <option value="BMI_feet">feet</option>
+        </select>
+        <input type="number" id="BMI_InputBoxInch" class="style_inputBoxFor_BMI feetInchInputBoxRes" placeholder="Only Inch Here">
+        <select class="in_unit_selectorBMI feetInchTypeRes" id="BMI_inch_select_unit">
+          <option value="BMI_inch">inch</option>
+        </select><br><br>        
+        <input class="style_outputBoxForBMI allInputBoxFullWidth" id="outputBoxForBMI"  placeholder="Result is here" disabled></input><br><br>
+        <button class="in_unit_selectorForResultButton allInputBoxFullWidth" id="resultButtonBMI"> Get Result</button><br><br>
+        <button class="in_unit_selectorForClearButton allInputBoxFullWidth" id="clearButtonForBMI"> Clear </button><br><br>
+        <textarea disabled class="style_descriptionBox allInputBoxFullWidth" name="description_for_result" id="descriptionBox_forBMI" cols="20" rows="4"></textarea>
+      </div>
+
+    <!-- Section For BMR -->
+      <div id="BmrHideAll">
+        <h1 class="headerText"> BMR Calculation</h1><br>
+        <input type="number" id="BMR_InputBoxWeight" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Your Weight">
+        <select class="in_unit_selector typeStyleForAll" id="BMI_weight_select_unit">
+          <option value="BMI_kg">kg</option>
+        </select><br><br>
+        <input type="number" id="BMR_InputBoxAge" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Your Age">
+        <select class="in_unit_selector typeStyleForAll" id="BMI_weight_select_unit">
+          <option value="ageIsHere">Years Old</option>
+        </select><br><br>
+        <select class="in_unit_selectorForType allInputBoxFullWidth" id="selectAnyGenderForBMR">
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+        </select><br><br>        
+        <input name="feetNumber" type="number" id="BMR_InputBoxFeet" class="style_inputBoxFor_BMI feetInchInputBoxRes" placeholder="Only Feet Here" maxlength="1">
+        <select class="in_unit_selectorBMI feetInchTypeRes" id="BMI_feet_select_unit">
+          <option value="BMI_feet">feet</option>
+        </select>
+        <input type="number" id="BMR_InputBoxInch" class="style_inputBoxFor_BMI feetInchInputBoxRes" placeholder="Only Inch Here" maxlength="2">
+        <select class="in_unit_selectorBMI feetInchTypeRes" id="BMI_inch_select_unit">
+          <option value="BMI_inch">inch</option>
+        </select><br><br> 
+        <select class="in_unit_selectorForType allInputBoxFullWidth" id="selectAnyPhysicalConditionForBMR">
+          <option value="primaryValue"> Select Your Physical Condition</option>
+          <option value="if_not_diligent">If Not Diligent ( পরিশ্রমী না হলে ) </option>
+          <option value="if_lightly_diligent">If Lightly Labored ( হালকা পরিশ্রমী হলে )</option>
+          <option value="Industrious">Industrious ( স্বাভাবিক পরিশ্রমী হলে )</option>
+          <option value="if_more_diligent">If More Diligent ( বেশি পরিশ্রমী হলে )</option>
+          <option value="if_very_diligent">If Very Diligent ( অত্যান্ত বেশি পরিশ্রমী হলে ) </option>
+        </select><br><br>
+       <input class="style_outputBoxForBMI allInputBoxFullWidth" id="outputBoxForBMR"  placeholder="Result is here" disabled></input><br><br>
+        <button class="in_unit_selectorForResultButton allInputBoxFullWidth" id="resultButtonBMR"> Get Result</button><br><br>
+        <button class="in_unit_selectorForClearButton allInputBoxFullWidth" id="clearButtonForBMR"> Clear </button><br><br>
+        <textarea disabled class="style_descriptionBox allInputBoxFullWidth" name="description_for_result" id="descriptionBox_forBMR" cols="20" rows="4"></textarea>
+      </div>
+      </div>
+   </div>
+    <!-- Section 3 End -->
+
+   <!-- Discount Calcultion -->
+   <!-- Section 4 Start -->
+   <div class="section_4">
+    <h1>Discout Calculation</h1><br>
+    <input type="number" id="Discout_InputBox" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Total Ammount">
+        <select class="in_unit_selector typeStyleForAll">
+          <option value="theAmmount">Total Ammount</option>
+        </select><br><br>
+        
+        <input type="number" id="parcent_InputBox" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Total Discount">
+        <select class="in_unit_selector typeStyleForAll">
+          <option value="parcent_InputBox">Discount %</option>
+        </select><br><br>
+    <input class="style_outputBoxForBMI allInputBoxFullWidth" id="outputBoxForDiscount"  placeholder="Result is here" disabled></input><br><br>
+    <button class="in_unit_selectorForResultButton allInputBoxFullWidth" id="resultButtonDiscount"> Get Result</button><br><br>
+    <button class="in_unit_selectorForClearButton allInputBoxFullWidth" id="clearButtonForDiscount"> Clear </button><br><br>
+    <textarea disabled class="style_descriptionBox allInputBoxFullWidth" name="description_for_result" id="descriptionBox_forDiscount" cols="20" rows="4"></textarea>
+   </div>
+<!-- Section 4 End -->
+
+<!-- Temperature Calculation -->
+<!-- Section 5 Start -->
+   <div class="section_5">
+    <h1>Temperature Calculation</h1><br>
+    <input type="number" id="Temperature_InputBox" class="style_inputBoxBMI allInputAndResultBox_style_r" placeholder="Enter Total Ammount">
+        <select class="in_unit_selector typeStyleForAll" id="in_type_for_temperature">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select><br><br>
+        <input class="style_outputBoxForTem allInputAndResultBox_style_r" id="outputBoxForTemperature"  placeholder="Result is here" disabled></input>
+        <select class="in_unit_selector typeStyleForAll" id="out_type_for_temperature">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select><br><br>
+    
+    <button class="in_unit_selectorForResultButton allInputBoxFullWidth" id="resultButtonTemperature"> Get Result</button><br><br>
+    <button class="in_unit_selectorForClearButton allInputBoxFullWidth" id="clearButtonForTemperature"> Clear </button><br><br>
+    <textarea disabled class="style_descriptionBox allInputBoxFullWidth" name="description_for_result" id="descriptionBox_forTemperature" cols="20" rows="4"></textarea>
+   </div>
+   <!-- Section 5 End -->
+
+   <!-- About Me Section -->
+   <!-- Section 6 Start -->
+   <div class="section_6">
+      <div class="footerHeader">
+        <h3 class="about_text">About</h3>
+        <div class="text_one"><h2>Md. Sohag Hossain</h2>
+          <p><i class="fa-solid fa-graduation-cap"></i> Diploma in Dhaka Polytechnic Institute </p>
+          <a href="https://www.facebook.com/programmingsohag" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook </a>
+          <a href="https://www.linkedin.com/in/programmingsohag" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkeDin </a><br>
+          
+        </div>
+        </div>
+        <div class="text_two"><h2> Web & App Developer</h2>    
+          <p><i class="fa-brands fa-whatsapp"></i> +880 1634-844248</p>
+          <p><i class="fa-solid fa-square-envelope"></i> mdsohag11rrr@gmail.com</p>
+          <a href="https://github.com/programmingsohag" target="_blank"><i class="fa-brands fa-github"></i> GitHub </a>
+          <a href="https://www.linkedin.com/in/programmingsohag" target="blank"><i class="fa-brands fa-linkedin"></i> LinkeDin </a><br>
+          <a href = "mailto:mdsohag11rrr@gamil.com?subject = Feedback&body = Message" target="blank"><i class="fa-solid fa-comment"></i>
+            Send Feedback
+            </a>
+      </div>      
+   </div>
+   <!-- Section 6 End -->
+  </body>
+</html>
+ 

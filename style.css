@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.maateen.me/mukti/font.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Mukti", sans-serif;
+  box-sizing: border-box;
+}
+.main_header {
+  color: whitesmoke;
+  position: fixed;
+  background-color: #1885f2;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  font-weight: bolder;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.headerText {
+  color: whitesmoke;
+}
+.section_1 {
+  border-top: blanchedalmond 2px solid;
+  border-left: blanchedalmond 2px solid;
+  border-right: blanchedalmond 2px solid;
+  text-align: center;
+  background-color: #538790;
+  padding: 5% 0% 10% 0%;
+}
+.section_2 {
+  border: black 2px solid;
+  text-align: center;
+  background-color: #22375a;
+  padding: 5% 0% 10% 0%;
+}
+.section_3 {
+  border-top: white 2px solid;
+  border-left: white 2px solid;
+  border-right: white 2px solid;
+  text-align: center;
+  background-color: #151c2b;
+  padding: 5% 0% 10% 0%;
+}
+.section_4 {
+  border-top: yellow 2px solid;
+  border-left: yellow 2px solid;
+  border-right: yellow 2px solid;
+  text-align: center;
+  background-color: #242d31;
+  padding: 5% 0% 10% 0%;
+  color: white;
+}
+.section_5 {
+  border-top: red 2px solid;
+  border-left: red 2px solid;
+  border-right: red 2px solid;
+  text-align: center;
+  background-color: #748cac;
+  padding: 5% 0% 10% 0%;
+  color: white;
+}
+.section_6 {
+  border: #1885f2 2px solid;
+  text-align: center;
+  background-color: #010b13;
+  padding: 4% 0% 10% 0%;
+  color: white;
+  height: 330px;
+}
+
+.text_one {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  height: 200px;
+  border-right: 2px solid white;
+}
+.text_one p {
+  font-size: 20px;
+  padding: 20px;
+}
+.text_one a {
+  font-size: 25px;
+  padding: 25px;
+  color: #1885f2;
+  outline: none;
+  text-decoration: none;
+}
+.text_two p {
+  font-size: 18px;
+  padding: 5px;
+}
+.text_two a {
+  font-size: 20px;
+  padding: 25px;
+  color: #1885f2;
+  outline: none;
+  text-decoration: none;
+}
+.text_two {
+  float: right;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  height: 200px;
+}
+.style_outputBox {
+  padding: 10px;
+  width: 35%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  color: red;
+}
+.style_inputBox {
+  padding: 10px;
+  width: 35%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.out_unit_selector,
+.in_unit_selector {
+  padding: 10px;
+  width: 15%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.resultButton {
+  padding: 10px;
+  width: 50.5%;
+  background-color: #1885f2;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.resultButton:hover {
+  background-color: cyan;
+  transition: 500ms;
+}
+.style_clearButton {
+  padding: 10px;
+  width: 50.5%;
+  background-color: red;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+}
+.style_clearButton:hover {
+  background-color: white;
+  transition: 500ms;
+  color: red;
+}
+
+/* BMI & BMR  Style Part */
+.style_inputBoxFor_BMI {
+  padding: 10px;
+  width: 17%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.style_inputBoxBMI {
+  padding: 10px;
+  width: 40%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.style_outputBoxForTem {
+  padding: 10px;
+  width: 40%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  color: red;
+}
+.in_unit_selectorBMI {
+  padding: 10px;
+  width: 10%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.in_unit_selectorForType {
+  padding: 10px;
+  width: 55.5%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.in_unit_selectorForClearButton {
+  padding: 10px;
+  width: 55.5%;
+  background-color: red;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+}
+.in_unit_selectorForClearButton:hover {
+  background-color: white;
+  color: red;
+  transition: 500ms;
+}
+.in_unit_selectorForType:hover {
+  background-color: greenyellow;
+  color: black;
+  transition: 500ms;
+  font-weight: bolder;
+}
+.in_unit_selectorForResultButton {
+  padding: 10px;
+  width: 55.5%;
+  background-color: #1885f2;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.in_unit_selectorForResultButton:hover {
+  background-color: greenyellow;
+  color: black;
+  transition: 500ms;
+}
+.style_outputBoxForBMI {
+  padding: 10px;
+  width: 55.5%;
+  background-color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  color: red;
+}
+.style_descriptionBox {
+  /* display:none; */
+  width: 55%;
+  border: 2px solid black;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+#BmrHideAll {
+  display: none;
+}
+.style_for_bmi {
+  background-color: greenyellow;
+  outline: none;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 27.5%;
+  border-radius: 2px;
+  font-weight: bolder;
+}
+.style_for_bmr {
+  background-color: greenyellow;
+  outline: none;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 27.5%;
+  border-radius: 2px;
+  font-weight: bolder;
+}
+.about_text {
+  display: none;
+}
+
+/* responsive design */
+@media only screen and (max-width: 600px) {
+  .text_one {
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 200px;
+  }
+  .text_one p {
+    font-size: 14px;
+    padding: 18px;
+  }
+  .text_one a {
+    font-size: 15px;
+    padding: 8px;
+    color: #1885f2;
+    outline: none;
+    text-decoration: none;
+  }
+  .text_two p {
+    font-size: 15px;
+    padding: 8px;
+  }
+  .text_two a {
+    font-size: 15px;
+    padding: 17px;
+    color: #1885f2;
+    outline: none;
+    text-decoration: none;
+  }
+  .text_two {
+    float: right;
+    margin-top: 3px;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 200px;
+  }
+  .section_6 {
+    border: #1885f2 2px solid;
+    text-align: center;
+    background-color: #010b13;
+    padding: 4% 0% 10% 0%;
+    color: white;
+    height: 300px;
+  }
+  .about_text {
+    padding: 10px;
+    display: block;
+  }
+  .allInputAndResultBox_style_r{
+    width:66%;
+  }
+  .allInputBoxFullWidth{
+    width: 96%;
+  }
+  .typeStyleForAll{
+    width:30%;
+  }
+  .feetInchInputBoxRes{
+    width: 30%;
+  }
+  .feetInchTypeRes{
+    width: 16%;
+  }
+  .BmrBmiButtionRes{
+    width:47%;
+  }
+}
